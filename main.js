@@ -73,11 +73,11 @@ function render() {
       uncompletedTodosDiv.append(createTodoElement(todo))
     })
   } else {
-    uncompletedTodosDiv.innerHTML = `<div class='empty'>No uncompleted mission</div>`
+    uncompletedTodosDiv.innerHTML = `<div class='empty'>沒有未完成的事件</div>`
   }
 
   if (completedTodos.length > 0) {
-    completedTodosDiv.innerHTML = `<div class='completed-title'>Completed (${completedTodos.length} / ${todoItems.length})</div>`
+    completedTodosDiv.innerHTML = `<div class='completed-title'>己完成的事件 (${completedTodos.length} / ${todoItems.length})</div>`
 
     completedTodos.forEach(todo => {
       completedTodosDiv.append(createTodoElement(todo))
